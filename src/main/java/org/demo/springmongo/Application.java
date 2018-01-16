@@ -36,14 +36,13 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
 //		repository.deleteAll();
 
-		// save a couple of customers
+		// create some users
 		repository.save(new User("zz1@gmail.com", "zz1"));
 		repository.save(new User("zz2@gmail.com", "zz2"));
 
-		// fetch all customers
+		// fetch all users
 		System.out.println("Users found with findAll():");
 		System.out.println("-------------------------------");
 		for (User user : repository.findAll()) {
@@ -51,8 +50,8 @@ public class Application implements CommandLineRunner {
 		}
 		System.out.println();
 
-		// fetch an individual customer
-		System.out.println("Customer found with findByFirstName('Alice'):");
+		// fetch an individual user
+		System.out.println("User found with findByEmail('zz1@gmail.co'):");
 		System.out.println("--------------------------------");
 		System.out.println(repository.findByEmail("zz1@gmail.com"));
 	}
