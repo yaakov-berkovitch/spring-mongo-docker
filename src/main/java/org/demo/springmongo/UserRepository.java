@@ -1,4 +1,4 @@
-package authclient;
+package org.demo.springmongo;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
