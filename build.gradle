@@ -34,3 +34,19 @@ dependencies {
     // Spring boot started dependency with all the required package to work with mongo
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
 }
+
+task buildDockerImage(overwrite:true){
+    description = "Build the docker image"
+
+    doLast {
+        exec {
+            commandLine "docker", "build", '--rm', '-t', "${jar.baseName}" + ':' + "${jar.version}", "${projectDir}"
+            standardOutput = new ByteArrayOutputStream()
+        }
+    }
+
+    doFirst {
+        println "Build the docker image - directory: ${projectDir}"
+    }
+}
+
