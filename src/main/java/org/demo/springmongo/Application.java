@@ -13,7 +13,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @ComponentScan({"org.demo.springmongo"})
 @EnableMongoRepositories({"org.demo.springmongo"})
 @SpringBootApplication
-@EnableAutoConfiguration
 public class Application implements CommandLineRunner {
 	@Autowired
 	private ApplicationConfig appConfig;
