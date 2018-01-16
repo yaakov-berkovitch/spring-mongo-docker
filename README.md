@@ -11,4 +11,9 @@ To list the images, run : docker images <br />
 
 ## Run the dockerized application
 To run the application use the following command: <br />
-docker run -d --rm --name spring-mongodb-docker -e MONGODB_SERVER_NAME=1.2.3.4 -e MONGODB_DATABASE_NAME=demodb spring-mongodb-docker:1.0 <br />
+docker run -d \ <br />
+&nbsp;&nbsp;--rm \ <br />
+&nbsp;&nbsp;--name spring-mongodb-docker \ <br />
+&nbsp;&nbsp;-e MONGODB_SERVER_NAME=1.2.3.4 \ <br />
+&nbsp;&nbsp;-e MONGODB_DATABASE_NAME=demodb \ <br />
+&nbsp;&nbsp;spring-mongodb-docker:1.0 <br />
