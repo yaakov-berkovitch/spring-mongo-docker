@@ -1,4 +1,4 @@
-package authclient;
+package org.demo.springmongo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,7 +14,7 @@ import com.mongodb.MongoClientURI;
  
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "authclient")
+@ComponentScan(basePackages = "org.demo.springmongo")
 public class ApplicationConfig {
 //	@Value("${spring.data.mongodb.uri}")
 	private String connectionUri="mongodb://epic_mongodb:27017/paas-auth-db?replicaSet=rs0";
