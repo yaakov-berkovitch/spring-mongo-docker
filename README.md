@@ -1,5 +1,9 @@
 # spring-mongo-docker
 
+## Introduction ##
+
+This is a simple starter project to understand how to simply work with spring-data and mongo.
+
 ## Build the project
 Run "gradle build" from the command line. <br />
 You can also load the project in eclipse IDE using the import of gradle project. <br />
